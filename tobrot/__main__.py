@@ -54,7 +54,7 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.regex(pattern="http[s]*://.+") | Filters.regex(pattern="magnet\:\?xt\=urn\:btih\:([A-F\d]+)") | Filters.command(["leech@clddwnldr_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@clddwnldr_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
