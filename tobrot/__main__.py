@@ -66,7 +66,7 @@ if __name__ == "__main__" :
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.regex(pattern="http[s]*://.+") | Filters.regex(pattern="magnet\:\?xt\=urn\:btih\:([A-F\d]+)") | Filters.command(["ytdl@oonacipla_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@oonacipla_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
