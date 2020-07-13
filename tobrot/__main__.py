@@ -54,7 +54,7 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leech@AkkiThe_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@moviemaniacs_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
@@ -66,7 +66,7 @@ if __name__ == "__main__" :
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdl@AkkiThe_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@moviemaniacs_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
@@ -125,13 +125,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnail@AkkiThe_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail@moviemaniacs_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnail@AkkiThe_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail@moviemaniacs_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
